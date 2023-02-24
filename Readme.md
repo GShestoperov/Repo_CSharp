@@ -1,6 +1,6 @@
 - Homework
-    - [HomeWork_01](HomeWork\HomeWork_01)
+    - HomeWork_01
 - Lecture
-    - [Lecture_01](Lecture\Lecture_01)
+    - Lecture_01
 - Seminar
-    - [Seminar_01](Seminar\Seminar_01)
+    - Seminar_01
