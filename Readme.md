@@ -2,5 +2,6 @@
     - HomeWork_01
 - Lecture
     - Lecture_01
+    - Lecture_02
 - Seminar
     - Seminar_01
