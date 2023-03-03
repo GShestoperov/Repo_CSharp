@@ -1,6 +1,6 @@
 - Homework
     - HomeWork_01
-        - Ex_002: [Блок-схема](Homework\HomeWork_01\Ex_002\diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_002/Program.cs) 
+        - Ex_002: [Блок-схема](Homework/HomeWork_01/Ex_002/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_002/Program.cs) 
         - Exp_004:
 
 - Lecture
