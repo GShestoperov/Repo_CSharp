@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-06 02:12:19 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDItMjY7IjExOjMyOjU0ICI7MjE2MQ=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDY7IjAyOjEyOjE5ICI7MTE7MjMxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, max" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1090;&#1088;&#1080; &#1095;&#1080;&#1089;&#1083;&#1072;: &quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="&#1089;"/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="max" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="b"/>
+                </else>
+            </if>
+            <if expression="c &gt; max">
+                <then>
+                    <assign variable="max" expression="c"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Max = &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
