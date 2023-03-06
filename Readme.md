@@ -4,7 +4,8 @@
         - Ex_004: [Блок-схема](Homework/HomeWork_01/Ex_004/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_004/Program.cs) 
         - Ex_006: [Блок-схема](Homework/HomeWork_01/Ex_006/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_006/Program.cs) 
         - Ex_008: [Блок-схема](Homework/HomeWork_01/Ex_008/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_008/Program.cs) 
-
+    - HomeWork_03
+        - Task_19: Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом. [Блок-схема_1](Homework/HomeWork_03/Task_19/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_19/diagram-isPalindrom.png), [Блок-схема_3](Homework/HomeWork_03/Task_19/diagram-numPosition.png) >>>  [Код](Homework/HomeWork_03/Task_19/Program.cs) 
 - Lecture
     - Lecture_01
     - Lecture_02
