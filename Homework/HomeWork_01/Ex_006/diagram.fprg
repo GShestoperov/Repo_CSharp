@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-06 02:30:59 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDItMjY7IjExOjMyOjU0ICI7MjE2MQ=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDY7IjAyOjMwOjU5ICI7MTQ7MjMyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;: &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a % 2 == 0">
+                <then>
+                    <output expression="&quot;&#1063;&#1080;&#1089;&#1083;&#1086; &#1095;&#1077;&#1090;&#1085;&#1086;&#1077;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#1063;&#1080;&#1089;&#1083;&#1086; &#1085;&#1077;&#1095;&#1077;&#1090;&#1085;&#1086;&#1077;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
