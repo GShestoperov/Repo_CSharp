@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 06:16:14 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDc7IjA1OjIzOjA5ICI7MjE2NA=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDc7IjA2OjE2OjE0ICI7NzsyMjc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="outStr" type="String" array="False" size=""/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; N: &quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="outStr" expression="TableCube(N)"/>
+            <output expression="outStr" newline="True"/>
+        </body>
+    </function>
+    <function name="TableCube" type="String" variable="result">
+        <parameters>
+            <parameter name="N" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="String" array="False" size=""/>
+            <declare name="i, cube" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="&quot;&quot;"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= N">
+                <assign variable="cube" expression="i * i * i"/>
+                <if expression="i &gt; 1">
+                    <then>
+                        <assign variable="result" expression="result + &quot;, &quot;"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="result" expression="result + cube"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
