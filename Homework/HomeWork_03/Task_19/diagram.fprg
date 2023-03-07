@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Georgy"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-03-07 12:12:11 "/>
+        <attribute name="saved" value="2023-03-07 01:02:36 "/>
         <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDY7IjExOjI5OjEzICI7MjE2MQ=="/>
-        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDc7IjEyOjEyOjExICI7MzsyMjYz"/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDc7IjAxOjAyOjM2ICI7NDsyMjY4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,7 @@
             <declare name="num" type="Integer" array="False" size=""/>
             <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1087;&#1103;&#1090;&#1080;&#1079;&#1085;&#1072;&#1095;&#1085;&#1086;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;: &quot;" newline="True"/>
             <input variable="num"/>
-            <if expression="numPosition(num, 1) == numPosition(num, 5) &amp;&amp; &#13;&#10;numPosition(num, 2) == numPosition(num, 4)">
+            <if expression="isPalindrom(num)">
                 <then>
                     <output expression="&quot;&#1063;&#1080;&#1089;&#1083;&#1086; &#1103;&#1074;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103; &#1087;&#1072;&#1083;&#1080;&#1085;&#1076;&#1088;&#1086;&#1084;&#1086;&#1084;&quot;" newline="True"/>
                 </then>
@@ -22,6 +22,14 @@
                     <output expression="&quot;&#1063;&#1080;&#1089;&#1083;&#1086; &#1085;&#1077; &#1103;&#1074;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103; &#1087;&#1072;&#1083;&#1080;&#1085;&#1076;&#1088;&#1086;&#1084;&#1086;&#1084;&quot;" newline="True"/>
                 </else>
             </if>
+        </body>
+    </function>
+    <function name="isPalindrom" type="Boolean" variable="result">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="result" expression="numPosition(num, 1) == numPosition(num, 5) &amp;&amp;&#13;&#10;numPosition(num, 2) == numPosition(num, 4)"/>
         </body>
     </function>
     <function name="numPosition" type="Integer" variable="result">

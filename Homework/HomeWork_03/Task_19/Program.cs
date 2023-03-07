@@ -17,7 +17,7 @@ bool isPalindrom(int num)
 
 int num;
 Console.Write("Введите пятизначное число: ");
-while (!int.TryParse(Console.ReadLine(), out num)) ;
+num = int.Parse(Console.ReadLine());
 
 if (isPalindrom(num))
     Console.WriteLine("Число является палиндромом");
