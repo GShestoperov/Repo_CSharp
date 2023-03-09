@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 05:39:31 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDk7IjA1OjI5OjE0ICI7MjE2OA=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMDk7IjA1OjM5OjMxICI7NDsyMjc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Array" type="Integer" array="False" size=""/>
+            <assign variable="Array" expression="{10,4,6,5,20,36,40}"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="newArray" type="Integer" array="True" size="Array.Length"/>
+            <declare name="newIndex" type="Integer" array="False" size=""/>
+            <assign variable="newIndex" expression="0"/>
+            <for variable="index" start="0" end="Array.Length - 1" direction="inc" step="1">
+                <if expression="Array[index] % 5 == 0">
+                    <then>
+                        <assign variable="newArray[newIndex]" expression="Array[index]"/>
+                        <assign variable="newIndex" expression="newIndex + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="newArray" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
