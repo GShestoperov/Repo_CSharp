@@ -13,3 +13,5 @@
     - Lecture_02
 - Seminar
     - Seminar_01
+    - Seminar_02
+    
