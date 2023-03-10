@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 04:06:53 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjA0OjA2OjUzICI7NzsyMjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;: &quot;)"/>
+            <declare name="thirdDigit" type="Integer" array="False" size=""/>
+            <assign variable="thirdDigit" expression="ThirdDigit(num)"/>
+            <if expression="thirdDigit != -1">
+                <then>
+                    <call expression="Output(&quot;&#1058;&#1088;&#1077;&#1090;&#1100;&#1103; &#1094;&#1080;&#1092;&#1088;&#1072; &quot; + thirdDigit)"/>
+                </then>
+                <else>
+                    <call expression="Output(&quot;&#1058;&#1088;&#1077;&#1090;&#1100;&#1077;&#1081; &#1094;&#1080;&#1092;&#1088;&#1099; &#1085;&#1077;&#1090;&quot;)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="GetNumber" type="Integer" variable="result">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="msg" newline="True"/>
+            <input variable="result"/>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="str" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="str" newline="True"/>
+        </body>
+    </function>
+    <function name="ThirdDigit" type="Integer" variable="result">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="Abs(num)"/>
+            <if expression="result &gt;= 100">
+                <then>
+                    <while expression="result &gt; 999">
+                        <assign variable="result" expression="result / 10"/>
+                    </while>
+                    <assign variable="result" expression="result % 10"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="-1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
