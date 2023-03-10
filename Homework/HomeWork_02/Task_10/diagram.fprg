@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 02:53:27 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjUzOjI3ICI7MzsyMjY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1090;&#1088;&#1077;&#1093;&#1079;&#1085;&#1072;&#1095;&#1085;&#1086;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;&quot;)"/>
+            <call expression="Output(&quot;&#1042;&#1090;&#1086;&#1088;&#1072;&#1103; &#1094;&#1080;&#1092;&#1088;&#1072; &quot; + SecondDigit(num))"/>
+        </body>
+    </function>
+    <function name="GetNumber" type="Integer" variable="result">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="msg" newline="True"/>
+            <input variable="result"/>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="str" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="str" newline="True"/>
+        </body>
+    </function>
+    <function name="SecondDigit" type="Integer" variable="result">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="Abs((num / 10) % 10)"/>
+        </body>
+    </function>
+</flowgorithm>

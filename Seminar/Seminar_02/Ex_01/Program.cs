@@ -17,3 +17,7 @@ for (newIndex = 0; newIndex < newArray.Length; newIndex++)
 {
     Console.Write(newArray[newIndex] + " ");
 }
+
+Console.WriteLine();
+Console.WriteLine(Random.Shared.Next(30));
+Console.WriteLine((new Random()).Next(30));
