@@ -4,6 +4,8 @@
         - Ex_004: [Блок-схема](Homework/HomeWork_01/Ex_004/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_004/Program.cs) 
         - Ex_006: [Блок-схема](Homework/HomeWork_01/Ex_006/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_006/Program.cs) 
         - Ex_008: [Блок-схема](Homework/HomeWork_01/Ex_008/diagram.png) >>>  [Код](Homework/HomeWork_01/Ex_008/Program.cs) 
+    - HomeWork_02
+        - Task_10: Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом. [Блок-схема_1](Homework/HomeWork_02/Task_10/diagram-main.png), [Блок-схема_2](Homework/HomeWork_02/Task_10/diagram-GetNumber.png), [Блок-схема_3](Homework/HomeWork_02/Task_10/diagram-SecondDigit.png) , [Блок-схема_4](Homework/HomeWork_02/Task_10/diagram-Output.png) >>>  [Код](Homework/HomeWork_02/Task_10/Program.cs) 
     - HomeWork_03
         - Task_19: Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом. [Блок-схема_1](Homework/HomeWork_03/Task_19/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_19/diagram-isPalindrom.png), [Блок-схема_3](Homework/HomeWork_03/Task_19/diagram-numPosition.png) >>>  [Код](Homework/HomeWork_03/Task_19/Program.cs) 
         - Task_21: Напишите метод(-ы), который принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве. [Блок-схема_1](Homework/HomeWork_03/Task_21/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_21/diagram-length2Point.png)  >>>  [Код](Homework/HomeWork_03/Task_21/Program.cs)
