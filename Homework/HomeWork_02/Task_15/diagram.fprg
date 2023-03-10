@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 05:34:36 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjA1OjM0OjM2ICI7OTsyMjc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;, &#1086;&#1073;&#1086;&#1079;&#1085;&#1072;&#1095;&#1072;&#1102;&#1097;&#1077;&#1077; &#1076;&#1077;&#1085;&#1100; &#1085;&#1077;&#1076;&#1077;&#1083;&#1080;: &quot;)"/>
+            <if expression="isHoliday(num)">
+                <then>
+                    <call expression="Output(&quot;&#1059;&#1088;&#1072;, &#1089;&#1077;&#1075;&#1086;&#1076;&#1085;&#1103; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081;! &#1042;&#1089;&#1077;&#1084; &#1075;&#1091;&#1083;&#1103;&#1090;&#1100;)&quot;)"/>
+                </then>
+                <else>
+                    <call expression="Output(&quot;&#1059;&#1074;&#1099;, &#1089;&#1077;&#1075;&#1086;&#1076;&#1085;&#1103; &#1085;&#1077; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081;&quot;)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="GetNumber" type="Integer" variable="result">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="msg" newline="True"/>
+            <input variable="result"/>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="str" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="str" newline="True"/>
+        </body>
+    </function>
+    <function name="isHoliday" type="Boolean" variable="result">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="num == 6 || num == 7">
+                <then>
+                    <assign variable="result" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
