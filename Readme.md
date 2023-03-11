@@ -16,13 +16,16 @@
         - Task_25:Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B. [Блок-схема_1](Homework/HomeWork_04/Task_25/diagram-main.png), [Блок-схема_2](Homework/HomeWork_04/Task_25/diagram-Pow.png), [Блок-схема_3](Homework/HomeWork_04/Task_25/diagram-GetNumber.png) [Блок-схема_4](Homework/HomeWork_04/Task_25/diagram-Output.png) >>>  [Код](Homework/HomeWork_04/Task_25/Program.cs) 
         - Task_27:Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе. [Блок-схема_1](Homework/HomeWork_04/Task_27/diagram-main.png), [Блок-схема_2](Homework/HomeWork_04/Task_27/diagram-SumDigit.png), [Блок-схема_3](Homework/HomeWork_04/Task_27/diagram-GetNumber.png), [Блок-схема_4](Homework/HomeWork_04/Task_27/diagram-Output.png) >>>  [Код](Homework/HomeWork_04/Task_27/Program.cs)
         - Task_29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. [Блок-схема_1](Homework/HomeWork_04/Task_29/diagram-main.png), [Блок-схема_2](Homework/HomeWork_04/Task_29/diagram-FillArray.png), [Блок-схема_3](Homework/HomeWork_04/Task_29/diagram-PrintArray.png), [Блок-схема_4](Homework/HomeWork_04/Task_29/diagram-CreateArray.png) >>>  [Код](Homework/HomeWork_04/Task_29/Program.cs)
+    - HomeWork_05
+        - Task_34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве. [Блок-схема_1](Homework/HomeWork_05/Task_34/diagram-main.png), [Блок-схема_2](Homework/HomeWork_05/Task_34/diagram-CreateArray.png), [Блок-схема_3](Homework/HomeWork_05/Task_34/diagram-PrintArray.png), [Блок-схема_4](Homework/HomeWork_05/Task_34/diagram-EvenCount.png), [Блок-схема_5](Homework/HomeWork_05/Task_34/diagram-Output.png) >>>  [Код](Homework/HomeWork_05/Task_34/Program.cs) 
 - Lecture
     - Lecture_01
     - Lecture_02
     - Lecture_03
+    - Lecture_04
 - Seminar
     - Seminar_01
     - Seminar_02
     - Seminar_03
     - Seminar_04
-    
+    - Seminar_05
