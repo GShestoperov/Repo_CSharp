@@ -12,10 +12,15 @@
         - Task_19: Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом. [Блок-схема_1](Homework/HomeWork_03/Task_19/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_19/diagram-isPalindrom.png), [Блок-схема_3](Homework/HomeWork_03/Task_19/diagram-numPosition.png) >>>  [Код](Homework/HomeWork_03/Task_19/Program.cs) 
         - Task_21: Напишите метод(-ы), который принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве. [Блок-схема_1](Homework/HomeWork_03/Task_21/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_21/diagram-length2Point.png)  >>>  [Код](Homework/HomeWork_03/Task_21/Program.cs)
         - Task_23: Напишите метод(-ы), который принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. [Блок-схема_1](Homework/HomeWork_03/Task_23/diagram-main.png), [Блок-схема_2](Homework/HomeWork_03/Task_23/diagram-TableCube.png)  >>>  [Код](Homework/HomeWork_03/Task_23/Program.cs)
+    - HomeWork_04
+        - Task_25:Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B. [Блок-схема_1](Homework/HomeWork_04/Task_25/diagram-main.png), [Блок-схема_2](Homework/HomeWork_04/Task_25/diagram-Pow.png), [Блок-схема_3](Homework/HomeWork_04/Task_25/diagram-GetNumber.png) [Блок-схема_4](Homework/HomeWork_04/Task_25/diagram-Output.png) >>>  [Код](Homework/HomeWork_04/Task_25/Program.cs) 
 - Lecture
     - Lecture_01
     - Lecture_02
+    - Lecture_03
 - Seminar
     - Seminar_01
     - Seminar_02
+    - Seminar_03
+    - Seminar_04
     

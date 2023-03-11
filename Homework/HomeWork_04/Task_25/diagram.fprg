@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 02:47:51 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTE7IjAyOjQ3OjUxICI7MTE7MjMxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086; A: &quot;)"/>
+            <assign variable="B" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086; B: &quot;)"/>
+            <call expression="Output(Pow(A, B))"/>
+        </body>
+    </function>
+    <function name="GetNumber" type="Integer" variable="result">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="msg" newline="True"/>
+            <input variable="result"/>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="str" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="str" newline="True"/>
+        </body>
+    </function>
+    <function name="Pow" type="Integer" variable="result">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="B &gt; 0">
+                <then>
+                    <assign variable="result" expression="A"/>
+                    <declare name="i" type="Integer" array="False" size=""/>
+                    <for variable="i" start="2" end="B" direction="inc" step="1">
+                        <assign variable="result" expression="result * A"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="result" expression="1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
