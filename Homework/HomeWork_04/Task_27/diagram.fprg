@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 03:45:30 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTE7IjAzOjQ1OjMwICI7MTU7MjMxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;: &quot;)"/>
+            <call expression="Output(&quot;&#1057;&#1091;&#1084;&#1084;&#1072; &#1094;&#1080;&#1092;&#1088; &quot; + SumDigit(num))"/>
+        </body>
+    </function>
+    <function name="GetNumber" type="Integer" variable="result">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="msg" newline="True"/>
+            <input variable="result"/>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="str" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="str" newline="True"/>
+        </body>
+    </function>
+    <function name="SumDigit" type="Integer" variable="result">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result, x" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="0"/>
+            <assign variable="x" expression="Abs(num)"/>
+            <while expression="x &gt; 0">
+                <assign variable="result" expression="result + x % 10"/>
+                <assign variable="x" expression="x / 10"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
