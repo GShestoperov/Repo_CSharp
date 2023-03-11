@@ -4,48 +4,49 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Georgy"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-03-11 03:45:30 "/>
+        <attribute name="saved" value="2023-03-11 04:15:18 "/>
         <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
-        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTE7IjAzOjQ1OjMwICI7MTU7MjMxNg=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTE7IjA0OjE1OjE4ICI7MTY7MjMyMQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="num" type="Integer" array="False" size=""/>
-            <assign variable="num" expression="GetNumber(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;: &quot;)"/>
-            <call expression="Output(&quot;&#1057;&#1091;&#1084;&#1084;&#1072; &#1094;&#1080;&#1092;&#1088; &quot; + SumDigit(num))"/>
+            <declare name="array" type="Integer" array="True" size="8"/>
+            <assign variable="array" expression="CreateArray(8)"/>
+            <call expression="FillArray(array)"/>
+            <call expression="PrintArray(array)"/>
         </body>
     </function>
-    <function name="GetNumber" type="Integer" variable="result">
+    <function name="CreateArray" type="Integer" variable="result">
         <parameters>
-            <parameter name="msg" type="String" array="False"/>
+            <parameter name="length" type="Integer" array="False"/>
         </parameters>
         <body>
-            <declare name="result" type="Integer" array="False" size=""/>
-            <output expression="msg" newline="True"/>
-            <input variable="result"/>
+            <declare name="result" type="Integer" array="True" size="length"/>
+            <assign variable="result" expression="new int[length]"/>
         </body>
     </function>
-    <function name="Output" type="None" variable="">
+    <function name="FillArray" type="None" variable="">
         <parameters>
-            <parameter name="str" type="String" array="False"/>
+            <parameter name="array" type="Integer" array="True"/>
         </parameters>
         <body>
-            <output expression="str" newline="True"/>
+            <declare name="random" type="Integer" array="False" size=""/>
+            <assign variable="random" expression="new Random()"/>
+            <for variable="i" start="0" end="array.Length - 1" direction="inc" step="1">
+                <assign variable="array[i]" expression="random.Next(1, 100)"/>
+            </for>
         </body>
     </function>
-    <function name="SumDigit" type="Integer" variable="result">
+    <function name="PrintArray" type="None" variable="">
         <parameters>
-            <parameter name="num" type="Integer" array="False"/>
+            <parameter name="array" type="Integer" array="True"/>
         </parameters>
         <body>
-            <declare name="result, x" type="Integer" array="False" size=""/>
-            <assign variable="result" expression="0"/>
-            <assign variable="x" expression="Abs(num)"/>
-            <while expression="x &gt; 0">
-                <assign variable="result" expression="result + x % 10"/>
-                <assign variable="x" expression="x / 10"/>
-            </while>
+            <for variable="i" start="0" end="array.Length - 1" direction="inc" step="1">
+                <output expression="array[i] + &quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
