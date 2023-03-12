@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-12 02:50:05 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTI7IjAyOjUwOjA1ICI7MjE7MjMxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arr" type="Real" array="True" size="10"/>
+            <assign variable="arr" expression="CreateArray(10)"/>
+            <call expression="PrintArray(arr)"/>
+            <call expression="Output(&quot;&#1056;&#1072;&#1079;&#1085;&#1080;&#1094;&#1072; &#1084;&#1077;&#1078;&#1076;&#1091; &#1084;&#1072;&#1082;&#1089;&#1080;&#1084;&#1072;&#1083;&#1100;&#1085;&#1099;&#1084; &#1080; &#1084;&#1080;&#1085;&#1080;&#1084;&#1072;&#1083;&#1100;&#1085;&#1099;&#1084; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1086;&#1084; &quot; + DifferenceMaxMin(arr))"/>
+        </body>
+    </function>
+    <function name="CreateArray" type="Real" variable="result">
+        <parameters>
+            <parameter name="length" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Real" array="True" size="length"/>
+            <assign variable="result" expression="new int[length]"/>
+            <declare name="random" type="Integer" array="False" size=""/>
+            <assign variable="random" expression="new Random()"/>
+            <for variable="i" start="0" end="length - 1" direction="inc" step="1">
+                <assign variable="result[i]" expression="random.Next(0, 30)"/>
+            </for>
+        </body>
+    </function>
+    <function name="DifferenceMaxMin" type="Real" variable="result">
+        <parameters>
+            <parameter name="arr" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Real" array="False" size=""/>
+            <assign variable="result" expression="FindMax(arr) - FindMin(arr)"/>
+        </body>
+    </function>
+    <function name="FindMax" type="Real" variable="result">
+        <parameters>
+            <parameter name="arr" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Real" array="False" size=""/>
+            <if expression="arr.Length &gt; 0">
+                <then>
+                    <assign variable="result" expression="arr[0]"/>
+                    <for variable="i" start="1" end="arr.Length - 1" direction="inc" step="1">
+                        <if expression="arr[i] &gt; result">
+                            <then>
+                                <assign variable="result" expression="arr[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="result" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="FindMin" type="Real" variable="result">
+        <parameters>
+            <parameter name="arr" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Real" array="False" size=""/>
+            <if expression="arr.Length &gt; 0">
+                <then>
+                    <assign variable="result" expression="arr[0]"/>
+                    <for variable="i" start="1" end="arr.Length - 1" direction="inc" step="1">
+                        <if expression="arr[i] &lt; result">
+                            <then>
+                                <assign variable="result" expression="arr[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="result" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="msg" newline="True"/>
+        </body>
+    </function>
+    <function name="PrintArray" type="None" variable="">
+        <parameters>
+            <parameter name="array" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <for variable="i" start="0" end="array.Length - 1" direction="inc" step="1">
+                <output expression="array[i] + &quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
