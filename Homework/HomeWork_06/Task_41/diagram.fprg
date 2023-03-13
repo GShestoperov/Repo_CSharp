@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Georgy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-13 10:44:01 "/>
+        <attribute name="created" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTA7IjAyOjQ0OjUzICI7MjE1Nw=="/>
+        <attribute name="edited" value="R2Vvcmd5O0NPTVAxOzIwMjMtMDMtMTM7IjEwOjQ0OjAxICI7MjQ7MjMxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M" type="Integer" array="False" size=""/>
+            <assign variable="M" expression="5"/>
+            <declare name="arr" type="Integer" array="True" size="M"/>
+            <assign variable="arr" expression="CreateArray(arr.Length)"/>
+            <call expression="Output(&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;: &quot;)"/>
+            <call expression="InputArray(arr)"/>
+            <call expression="Output($&quot;&#1042; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1077; &#1073;&#1086;&#1083;&#1100;&#1096;&#1077; &#1085;&#1091;&#1083;&#1103; {GreaterNullCount(arr)} &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1086;&#1074;&quot;)"/>
+        </body>
+    </function>
+    <function name="CreateArray" type="Integer" variable="result">
+        <parameters>
+            <parameter name="length" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="True" size="length"/>
+            <assign variable="result" expression="new int[length]"/>
+        </body>
+    </function>
+    <function name="GreaterNullCount" type="Integer" variable="result">
+        <parameters>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="0"/>
+            <for variable="i" start="0" end="arr.Length - 1" direction="inc" step="1">
+                <if expression="arr[i] &gt; 0">
+                    <then>
+                        <assign variable="result" expression="result + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="InputArray" type="None" variable="">
+        <parameters>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <for variable="i" start="0" end="arr.Length - 1" direction="inc" step="1">
+                <output expression="$&quot;&#1069;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090; {i}: &quot;" newline="False"/>
+                <input variable="arr[i]"/>
+            </for>
+        </body>
+    </function>
+    <function name="Output" type="None" variable="">
+        <parameters>
+            <parameter name="msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="msg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
