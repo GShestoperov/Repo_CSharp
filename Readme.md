@@ -28,6 +28,7 @@
     - Lecture_02
     - Lecture_03
     - Lecture_04
+    - Lecture_05
 - Seminar
     - Seminar_01
     - Seminar_02
