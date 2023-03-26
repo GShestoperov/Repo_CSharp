@@ -33,6 +33,8 @@
     - Lecture_03
     - Lecture_04
     - Lecture_05
+    - Lecture_06
+    - Lecture_07
 - Seminar
     - Seminar_01
     - Seminar_02
@@ -40,3 +42,4 @@
     - Seminar_04
     - Seminar_05
     - Seminar_06
+    - Seminar_07
